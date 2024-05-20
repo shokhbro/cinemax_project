@@ -341,51 +341,59 @@ class _HomePageState extends State<HomePage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Container(
-                                width: 135,
-                                height: 178,
-                                decoration: const BoxDecoration(
-                                  borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(15),
-                                    topRight: Radius.circular(15),
+                              InkWell(
+                                onTap: () {
+                                  Navigator.of(context).push(MaterialPageRoute(
+                                      builder: (builder) =>
+                                          const SearchPage()));
+                                },
+                                child: Container(
+                                  width: 135,
+                                  height: 178,
+                                  decoration: const BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(15),
+                                      topRight: Radius.circular(15),
+                                    ),
+                                    color: Colors.amber,
+                                    image: DecorationImage(
+                                      image: AssetImage(
+                                          "assets/images/spiderman.png"),
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
-                                  color: Colors.amber,
-                                  image: DecorationImage(
-                                    image: AssetImage(
-                                        "assets/images/spiderman.png"),
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                                child: Align(
-                                  alignment: Alignment.topRight,
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(6.0),
-                                    child: Container(
-                                      width: 55,
-                                      height: 24,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(10),
-                                        color: const Color(0x80253839),
-                                      ),
-                                      child: const Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Icon(
-                                            Icons.star,
-                                            color: Color(0xffFF8700),
-                                            size: 18,
-                                          ),
-                                          Gap(5),
-                                          Text(
-                                            "4.5",
-                                            style: TextStyle(
+                                  child: Align(
+                                    alignment: Alignment.topRight,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(6.0),
+                                      child: Container(
+                                        width: 55,
+                                        height: 24,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                          color: const Color(0x80253839),
+                                        ),
+                                        child: const Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Icon(
+                                              Icons.star,
                                               color: Color(0xffFF8700),
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 13,
+                                              size: 18,
                                             ),
-                                          )
-                                        ],
+                                            Gap(5),
+                                            Text(
+                                              "4.5",
+                                              style: TextStyle(
+                                                color: Color(0xffFF8700),
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 13,
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -437,51 +445,59 @@ class _HomePageState extends State<HomePage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Container(
-                                width: 135,
-                                height: 178,
-                                decoration: const BoxDecoration(
-                                  borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(15),
-                                    topRight: Radius.circular(15),
+                              InkWell(
+                                onTap: () {
+                                  Navigator.of(context).push(MaterialPageRoute(
+                                      builder: (builder) =>
+                                          const SearchPage()));
+                                },
+                                child: Container(
+                                  width: 135,
+                                  height: 178,
+                                  decoration: const BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(15),
+                                      topRight: Radius.circular(15),
+                                    ),
+                                    color: Colors.amber,
+                                    image: DecorationImage(
+                                      image: AssetImage(
+                                          "assets/images/pining.png"),
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
-                                  color: Colors.amber,
-                                  image: DecorationImage(
-                                    image:
-                                        AssetImage("assets/images/pining.png"),
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                                child: Align(
-                                  alignment: Alignment.topRight,
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(6.0),
-                                    child: Container(
-                                      width: 55,
-                                      height: 24,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(10),
-                                        color: const Color(0x80253839),
-                                      ),
-                                      child: const Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Icon(
-                                            Icons.star,
-                                            color: Color(0xffFF8700),
-                                            size: 18,
-                                          ),
-                                          Gap(5),
-                                          Text(
-                                            "4.5",
-                                            style: TextStyle(
+                                  child: Align(
+                                    alignment: Alignment.topRight,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(6.0),
+                                      child: Container(
+                                        width: 55,
+                                        height: 24,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                          color: const Color(0x80253839),
+                                        ),
+                                        child: const Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Icon(
+                                              Icons.star,
                                               color: Color(0xffFF8700),
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 13,
+                                              size: 18,
                                             ),
-                                          )
-                                        ],
+                                            Gap(5),
+                                            Text(
+                                              "4.5",
+                                              style: TextStyle(
+                                                color: Color(0xffFF8700),
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 13,
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -533,51 +549,59 @@ class _HomePageState extends State<HomePage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Container(
-                                width: 135,
-                                height: 178,
-                                decoration: const BoxDecoration(
-                                  borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(15),
-                                    topRight: Radius.circular(15),
+                              InkWell(
+                                onTap: () {
+                                  Navigator.of(context).push(MaterialPageRoute(
+                                      builder: (builder) =>
+                                          const SearchPage()));
+                                },
+                                child: Container(
+                                  width: 135,
+                                  height: 178,
+                                  decoration: const BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(15),
+                                      topRight: Radius.circular(15),
+                                    ),
+                                    color: Colors.amber,
+                                    image: DecorationImage(
+                                      image: AssetImage(
+                                          "assets/images/riveldale.png"),
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
-                                  color: Colors.amber,
-                                  image: DecorationImage(
-                                    image: AssetImage(
-                                        "assets/images/riveldale.png"),
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                                child: Align(
-                                  alignment: Alignment.topRight,
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(6.0),
-                                    child: Container(
-                                      width: 55,
-                                      height: 24,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(10),
-                                        color: const Color(0x80253839),
-                                      ),
-                                      child: const Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Icon(
-                                            Icons.star,
-                                            color: Color(0xffFF8700),
-                                            size: 18,
-                                          ),
-                                          Gap(5),
-                                          Text(
-                                            "4.5",
-                                            style: TextStyle(
+                                  child: Align(
+                                    alignment: Alignment.topRight,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(6.0),
+                                      child: Container(
+                                        width: 55,
+                                        height: 24,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                          color: const Color(0x80253839),
+                                        ),
+                                        child: const Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Icon(
+                                              Icons.star,
                                               color: Color(0xffFF8700),
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 13,
+                                              size: 18,
                                             ),
-                                          )
-                                        ],
+                                            Gap(5),
+                                            Text(
+                                              "4.5",
+                                              style: TextStyle(
+                                                color: Color(0xffFF8700),
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 13,
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -629,51 +653,59 @@ class _HomePageState extends State<HomePage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Container(
-                                width: 135,
-                                height: 178,
-                                decoration: const BoxDecoration(
-                                  borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(15),
-                                    topRight: Radius.circular(15),
+                              InkWell(
+                                onTap: () {
+                                  Navigator.of(context).push(MaterialPageRoute(
+                                      builder: (builder) =>
+                                          const SearchPage()));
+                                },
+                                child: Container(
+                                  width: 135,
+                                  height: 178,
+                                  decoration: const BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(15),
+                                      topRight: Radius.circular(15),
+                                    ),
+                                    color: Colors.amber,
+                                    image: DecorationImage(
+                                      image: AssetImage(
+                                          "assets/images/black_widow.png"),
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
-                                  color: Colors.amber,
-                                  image: DecorationImage(
-                                    image: AssetImage(
-                                        "assets/images/black_widow.png"),
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                                child: Align(
-                                  alignment: Alignment.topRight,
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(6.0),
-                                    child: Container(
-                                      width: 55,
-                                      height: 24,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(10),
-                                        color: const Color(0x80253839),
-                                      ),
-                                      child: const Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Icon(
-                                            Icons.star,
-                                            color: Color(0xffFF8700),
-                                            size: 18,
-                                          ),
-                                          Gap(5),
-                                          Text(
-                                            "4.5",
-                                            style: TextStyle(
+                                  child: Align(
+                                    alignment: Alignment.topRight,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(6.0),
+                                      child: Container(
+                                        width: 55,
+                                        height: 24,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                          color: const Color(0x80253839),
+                                        ),
+                                        child: const Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Icon(
+                                              Icons.star,
                                               color: Color(0xffFF8700),
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 13,
+                                              size: 18,
                                             ),
-                                          )
-                                        ],
+                                            Gap(5),
+                                            Text(
+                                              "4.5",
+                                              style: TextStyle(
+                                                color: Color(0xffFF8700),
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 13,
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
