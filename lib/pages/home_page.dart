@@ -81,7 +81,8 @@ class _HomePageState extends State<HomePage> {
                 constraints: const BoxConstraints(
                   maxHeight: 50,
                 ),
-                child: TextField(
+                child: TextFormField(
+                  style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     fillColor: const Color(0xff252836),
                     filled: true,

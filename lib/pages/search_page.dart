@@ -28,6 +28,7 @@ class _SearchPageState extends State<SearchPage> {
                   maxHeight: 48,
                 ),
                 child: TextField(
+                  style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     filled: true,
                     fillColor: const Color(0xff252836),
